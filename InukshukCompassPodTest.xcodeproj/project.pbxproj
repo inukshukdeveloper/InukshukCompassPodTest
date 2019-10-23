@@ -15,6 +15,7 @@
 		4D8544772360FA9E00AF73FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8544762360FA9E00AF73FD /* Assets.xcassets */; };
 		4D85447A2360FA9E00AF73FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8544782360FA9E00AF73FD /* LaunchScreen.storyboard */; };
 		4D8544852360FA9E00AF73FD /* InukshukCompassPodTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8544842360FA9E00AF73FD /* InukshukCompassPodTestTests.swift */; };
+		AE2D7AAB4E1C84D22143BCA8 /* Pods_InukshukCompassPodTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054258BD34986183001A5D4E /* Pods_InukshukCompassPodTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054258BD34986183001A5D4E /* Pods_InukshukCompassPodTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InukshukCompassPodTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8544672360FA9C00AF73FD /* InukshukCompassPodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InukshukCompassPodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D85446A2360FA9C00AF73FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D85446C2360FA9C00AF73FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		4D8544802360FA9E00AF73FD /* InukshukCompassPodTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InukshukCompassPodTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8544842360FA9E00AF73FD /* InukshukCompassPodTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InukshukCompassPodTestTests.swift; sourceTree = "<group>"; };
 		4D8544862360FA9E00AF73FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615A615C036D8BE9C4351DC5 /* Pods-InukshukCompassPodTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InukshukCompassPodTest.release.xcconfig"; path = "Target Support Files/Pods-InukshukCompassPodTest/Pods-InukshukCompassPodTest.release.xcconfig"; sourceTree = "<group>"; };
+		919B4986B1EE6492C5D2D364 /* Pods-InukshukCompassPodTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InukshukCompassPodTest.debug.xcconfig"; path = "Target Support Files/Pods-InukshukCompassPodTest/Pods-InukshukCompassPodTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2D7AAB4E1C84D22143BCA8 /* Pods_InukshukCompassPodTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359498F13F2BC485F0AA28ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054258BD34986183001A5D4E /* Pods_InukshukCompassPodTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D85445E2360FA9C00AF73FD = {
 			isa = PBXGroup;
 			children = (
 				4D8544692360FA9C00AF73FD /* InukshukCompassPodTest */,
 				4D8544832360FA9E00AF73FD /* InukshukCompassPodTestTests */,
 				4D8544682360FA9C00AF73FD /* Products */,
+				E7051CCFEA6D90114889D96A /* Pods */,
+				359498F13F2BC485F0AA28ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +117,16 @@
 			path = InukshukCompassPodTestTests;
 			sourceTree = "<group>";
 		};
+		E7051CCFEA6D90114889D96A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				919B4986B1EE6492C5D2D364 /* Pods-InukshukCompassPodTest.debug.xcconfig */,
+				615A615C036D8BE9C4351DC5 /* Pods-InukshukCompassPodTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D8544892360FA9E00AF73FD /* Build configuration list for PBXNativeTarget "InukshukCompassPodTest" */;
 			buildPhases = (
+				557BF708BCC5101BAA6F083C /* [CP] Check Pods Manifest.lock */,
 				4D8544632360FA9C00AF73FD /* Sources */,
 				4D8544642360FA9C00AF73FD /* Frameworks */,
 				4D8544652360FA9C00AF73FD /* Resources */,
+				9A3075256C0071873D03976C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +224,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		557BF708BCC5101BAA6F083C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InukshukCompassPodTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3075256C0071873D03976C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InukshukCompassPodTest/Pods-InukshukCompassPodTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InukshukCompassPodTest/Pods-InukshukCompassPodTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InukshukCompassPodTest/Pods-InukshukCompassPodTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D8544632360FA9C00AF73FD /* Sources */ = {
@@ -364,6 +433,7 @@
 		};
 		4D85448A2360FA9E00AF73FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919B4986B1EE6492C5D2D364 /* Pods-InukshukCompassPodTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +451,7 @@
 		};
 		4D85448B2360FA9E00AF73FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615A615C036D8BE9C4351DC5 /* Pods-InukshukCompassPodTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
