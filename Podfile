@@ -6,6 +6,6 @@ target 'InukshukCompassPodTest' do
   use_frameworks!
 
   # Pods for InukshukCompassPodTest
-  pod 'InukshukCompass', '1.0.3'    
+  pod 'InukshukCompass', '1.0.5'    
 
 end
