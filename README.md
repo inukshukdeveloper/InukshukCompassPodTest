@@ -1,3 +1,5 @@
+(In Archive Mode)
+
 #  InukshukCompassPodTest
 
 Demo Xcode project showing how to use the InukshukCompass custom view CocoaPod.
